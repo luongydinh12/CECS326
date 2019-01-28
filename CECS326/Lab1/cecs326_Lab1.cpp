@@ -1,7 +1,7 @@
 
 // Dinh Luong
 // cecs326_Lab1.cpp
-// Description: This program demonstrate allocation and deallocation of memory 
+// Description: This program demonstrates allocation and deallocation of memory 
 
 
 #include <iostream>
