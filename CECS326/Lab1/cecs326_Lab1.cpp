@@ -1,14 +1,14 @@
 
 // Dinh Luong
 // cecs326_Lab1.cpp
-// Description: This program demonstrate allocation and deallocation of memory 
+// Description: This program demonstrates allocation and deallocation of memory 
 
 
 #include <iostream>
 
 using namespace std;
 
-char alphabet[26] = { 'A' , 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+char alphabet[26] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 char randomCharacter(){
     int randomIndex = rand()%26;
     return alphabet[randomIndex];
@@ -19,7 +19,7 @@ int recursive(int n) {
         return 2700;
     else
         return (2*recursive(n-1));
-} //  Recursive Function: f(0)=2700 & f(n+1)=2*f(n), Generate indexes of integer array
+} //  Recursive Function: f(0)=2700 & f(n+1)=2*f(n)
 
 struct myArray
 {   
@@ -45,14 +45,15 @@ void menu(){
     cout << "(2) List deallocated memory (index) \n";
     cout << "(3) Deallocate all memory\n";
     cout << "(4) Exit program\n";
-}
+} // Main Menu
+
 void subMenu(){
     cout << endl;
     cout << "-- Sub Menu --\n";
     cout << "(1) Print the first 10 char's in the chosen array \n";
     cout << "(2) Delete all the char's associated with this pointer \n";
     cout << "(3) Return to Main Menu \n";
-}
+} // Sub Menu for option 1
 
 int main() {
     myArray array; // Create struct 
@@ -115,8 +116,7 @@ int main() {
                 break;} // Deallocate all memory and set all point to NULL // End of case 3
         }
         menu();
-        cin >> choice;
-        
+        cin >> choice;        
     }
     //ON EXIT: deallocate all memory (even though the OS will automatically do it)
     for (int i=0; i <20; i++){
