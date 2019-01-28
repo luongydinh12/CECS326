@@ -1,4 +1,3 @@
-
 // Dinh Luong
 // cecs326_Lab1.cpp
 // Description: This program demonstrates allocation and deallocation of memory 
