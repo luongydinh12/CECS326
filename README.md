@@ -1,2 +1,2 @@
 # CECS326
-# Professor: Ratana Ngo
+## Professor: Ratana Ngo
