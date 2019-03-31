@@ -1,3 +1,9 @@
+// Dinh Luong
+// cecs326_Lab3.cpp
+// Description: This program demonstrates the fork and wait of the parent and its child processes
+//              The parent process will ask user to enter a target string and replacement.
+//              The child process(es) will do the replacement on the original article.
+
 #include <unistd.h>
 #include <iostream>
 #include <cstdlib>
@@ -84,7 +90,7 @@ int main(){
 
             cout << "After replacement: "<< article <<endl;
             cout << "Number of replacements: " << counter <<endl;
-
+            exit(0); // Child process exits
         }
     }
     exit(0);
