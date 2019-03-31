@@ -68,7 +68,7 @@ int main(){
             wait(0); 
         }
         else if (childPID == 0){ //If the process is child -> do replacement
-            cout << "/nChild Process: pid " << getpid() << endl;
+            cout << "\nChild Process: pid " << getpid() << endl;
             int counter = 0; // counter to count the number of replacements
             
             // Scenario 1: Child replaces the target string that exists and exits out of the loop
