@@ -38,9 +38,9 @@ int main(){
         back pain or other permanent damages done to the nerves in the neck and shoulders. 
         All the problems and concerns mentioned above can be solved by implementing Kindle in the 
         school system";
-        
+
         // Output original article
-        cout << "Original article: " << article << endl; 
+        cout << "Original article: " << article << endl << endl; 
         // Ask user for target string or whether the user want to exit
         cout << "Enter a target string or <!wq> to exit ";
         cin  >> target;
@@ -77,7 +77,7 @@ int main(){
                 //Replace the targets with the replacement
                 while ( current != string::npos){
                     article.replace( current , target.length(), replacement);
-                    current= article.find(target, current+1) // Find next target
+                    current= article.find(target, current+1);// Find next target
                     counter++; // keep track of number of replacements
                 }
             }
