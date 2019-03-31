@@ -20,7 +20,7 @@ int main(){
         // Output original article
         cout << "Original article: " << article << endl << endl; 
         // Ask user for target string or whether the user want to exit
-        cout << "Enter a target string or <!wq> to exit ";
+        cout << "Enter a target string or <!wq> to exit: ";
         cin  >> target;
 
         // If the user enters <!wq>, the program exits
@@ -40,7 +40,7 @@ int main(){
             wait(0); 
         }
         else if (childPID == 0){ //If the process is child -> do replacement
-            cout << "Child Process: pid" << getpid() << endl;
+            cout << "/nChild Process: pid " << getpid() << endl;
             int counter = 0; // counter to count the number of replacements
             
             // Scenario 1: Child replaces the target string that exists and exits out of the loop
@@ -60,8 +60,8 @@ int main(){
                 }
             }
 
-            cout << "After replacement: "<< article <<endl;
-            cout << "Number of replacements: " << counter <<endl;
+            cout << "After replacement: "<< article <<endl<<endl;
+            cout << "Number of replacements: " << counter <<endl<<endl;
             exit(0);
         }
     }
